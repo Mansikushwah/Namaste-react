@@ -1,0 +1,13 @@
+When a browser loads a webpage, it reads the HTML line by line. If it sees a <script> tag, it pauses everything to download and run the script. This can slow down the page loading.
+
+To fix this, we use async and defer, which are two ways to control how and when a script runs.
+
+Async
+Think of async like a kid running to play whenever they get a new toy.
+The browser downloads the script in the background while it keeps reading the rest of the HTML.
+As soon as the script finishes downloading, it stops everything else to run it immediately.
+This can make the page faster, but if you have multiple scripts, they might run in a random order.
+Defer
+Defer is like a kid waiting to play with all their toys only after finishing homework.
+The browser downloads the script in the background, just like async, but it waits until the entire HTML is loaded before running the script.
+If there are multiple scripts with defer, they run in the order they appear in the HTML.

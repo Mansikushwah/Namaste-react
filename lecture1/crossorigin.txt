@@ -1,0 +1,9 @@
+"Cross-Origin" ka matlab hota hai ki jab ek website (ya application) kisi doosri website ya server se data lene ki koshish karti hai, to woh ek doosre origin se aati hai. Origin ka matlab hota hai website ka address, jaise:
+
+Origin 1: http://localhost:3000 (React app ka server)
+Origin 2: http://api.example.com (API ka server)
+Agar React app (Origin 1) data lene ki koshish kare Origin 2 se, to browser ko lagta hai:
+
+"Hey! Ye toh kisi doosri jagah se data maang raha hai. Mujhe pehle check karna hoga ki ye allowed hai ya nahi."
+
+Yeh check CORS (Cross-Origin Resource Sharing) ke rules se hota hai. Agar API server ne React app ko access dene ki permission di hai, tabhi browser data bhejne ya lene deta hai.
